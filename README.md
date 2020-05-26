@@ -1,5 +1,7 @@
 # Ayuda-DNI
   - Practica - Ayuda DNI 
 # Contenido
-   - Visualización del resultado final por consola.
-   - Visualización del resultado final en el navegador mediante Go Live.
+   - Visualización del resultado final por :  
+          - Consola (console.log)
+          - Navegador (document.write) 
+          - Go Live. Llamada del index a la función JavaScript
