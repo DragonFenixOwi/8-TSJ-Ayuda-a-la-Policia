@@ -45,16 +45,16 @@ function imprimir_letra_numero(valor_porsicion_letra, valor_dni)
         /*
             - "valor_posicion_letra" = resultado enviado de la función "resto", que indica la letra del DNI
             - "valor_dni" = numero que se introduce por teclado. 
-            Es enviada de la función principal "encontrar_letra_dni" a la fución "resto" 
-            y por ultimo "resto", envia el valor a esta función para imprimirla.
+                            Es enviada de la función principal "encontrar_letra_dni" a la fución "resto" 
+                            y por ultimo "resto", envia el valor a esta función para imprimirla.
             - 
         */
-        // Impresión del resultado final en navegador 
+        // Visualización del resultado final en navegador 
         document.write(` la letra que corresponde al DNI de número
         "${valor_dni}" es : "${Letra_DNI [valor_porsicion_letra]}" <br> <br>
         Entonces el DNI es: "${valor_dni} - ${Letra_DNI [valor_porsicion_letra]}"`);
         
-        // Impresión del resultado final en consola
+        // Visualización del resultado final en consola
         console.log(` la letra que corresponde al DNI de número
         "${valor_dni}" es : "${Letra_DNI [valor_porsicion_letra]}" \n \n
         Entonces el DNI es: "${valor_dni} - ${Letra_DNI [valor_porsicion_letra]}"`);
@@ -66,18 +66,18 @@ function imprimir_letra_numero(valor_porsicion_letra, valor_dni)
 
 
 
-/* Función "resto" : permite hallar el resto de la devisión entre 
-                        -el dato introducido por teclado "numero_dni" 
-                        -  y 23 (cantidad de letras en "letra_DNI") 
-                        Ñ"numero_dni" % 23
+/* Función "resto" : permite hallar el resto de la división entre :
+                        - El dato introducido por teclado "numero_dni" 
+                        -  Y 23 (cantidad de letras en "letra_DNI") 
+                                _"numero_dni" % 23_
 */
 function resto (resto_dni)
     {
         /* Operación para hallar el resto. 
                 - "resultad_resto" = se guarda el resultado final de la operación
-                -"resto_dni" = es enviada de la función "encontrar_letra_dni"
+                - "resto_dni" = es enviada de la función "encontrar_letra_dni"
                     # resto_dni = numero_dni = (valor introducido por teclado)
-                -"Letra_DNI.length" = tamaño del array "Letra_DNI" le restamos -1 para que nos de "23"
+                -"Letra_DNI.length" = tamaño del array "Letra_DNI" y le restamos -1 para que nos de "23"
         */
         var resultado_resto = resto_dni % (Letra_DNI.length-1);
         
@@ -96,9 +96,9 @@ function resto (resto_dni)
 
 function encontrar_letra_dni ()
     {
-        // Se guarda en la variable "numero_dni", el numero introducido por teclado, que represanta el numero de DNI
+        // Se guarda en la variable "numero_dni". El número introducido por teclado, que represanta el número de DNI
             var numero_dni = prompt('Introduce tu numero de DNI por favor: ');
-        // llamada a la función "resto", para obtener "un resto". El resto indica la posicion de la letra dentro del array "Letra_DNI"
+        // llamada a la función "resto", para obtener "un resto-%". El resto indica la posicion de la letra dentro del array "Letra_DNI"
             resto(numero_dni);
         
     }
