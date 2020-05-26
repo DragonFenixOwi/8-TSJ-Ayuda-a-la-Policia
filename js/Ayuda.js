@@ -37,8 +37,8 @@ var resto_dni=0;
 
 /*
     Función imprimir_letra_numero: permite visualizar el numero de DNI y la letra al cual corresponde por: 
-        - Consola
-        - Navegador
+                                        - Consola
+                                        - Navegador
 */
 function imprimir_letra_numero(valor_porsicion_letra, valor_dni)
     {
@@ -67,9 +67,9 @@ function imprimir_letra_numero(valor_porsicion_letra, valor_dni)
 
 
 /* Función "resto" : permite hallar el resto de la devisión entre 
-        -el dato introducido por teclado "numero_dni" 
-        -  y 23 (cantidad de letras en "letra_DNI") 
-            "numero_dni" % 23
+                        -el dato introducido por teclado "numero_dni" 
+                        -  y 23 (cantidad de letras en "letra_DNI") 
+                        Ñ"numero_dni" % 23
 */
 function resto (resto_dni)
     {
